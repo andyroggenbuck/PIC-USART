@@ -1,6 +1,8 @@
 # USART User Interface for PIC Development Board
 
-This project was done as a lab assignment in the Advanced Digital Design course at Ferris State University. It uses asynchronous serial communication to provide a text-based user interface through which a user can utilize the devices on the Bulldog PIC++ development board. The development board was designed and built by Professor Robert Most at Ferris State University, featuring a PIC18F46K80 microcontroller and a variety of additional devices. The hardware used in this project is shown in the block diagram below.
+This project uses asynchronous serial communication to provide a text-based user interface through which a user can utilize the devices on the Bulldog PIC++ development board, which was designed and built by Professor Robert Most at Ferris State University. This project was done as a lab assignment in the Advanced Digital Design course at Ferris State University.
+
+The hardware used in this project is shown in the block diagram below.
 
 </br>
 <p align="center">
@@ -8,7 +10,7 @@ This project was done as a lab assignment in the Advanced Digital Design course 
 </p>
 </br>
 
-The project was programmed in C using MPLAB X and compiled using Microchip's C18 compiler. Functions from the C18 compiler library were used to configure and use the PIC18's USART peripheral. The PIC18 uses USART to send serial data to a USB to serial converter, which provides USB connectivity to a host PC. The user interface is accessed via a serial terminal on the host PC.
+The project was programmed in C using MPLAB X and compiled using Microchip's C18 compiler. Functions from the C18 compiler library were used to configure and use peripherals of the PIC18. The PIC18 uses USART to send serial data to a USB to serial converter, which provides USB connectivity to a host PC. The user interface is accessed via a serial terminal on the host PC.
 
 After initializations, the program prompts the user for an input command and then polls the DataRdy1USART() function to wait until a character is received. A switch case statement takes the necessary action when a valid command is received. The available commands are as follows:
 </br>
